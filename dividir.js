@@ -4,10 +4,12 @@
 
 function dividirDois(n1, n2){
     const resultado = n1/ n2
-     
-       if(n1 % n2 == 0){
+
+       if( resultado % 2 == 0){
         return `${resultado} é Par`
+    } else if(resultado % 2 !== 0){
+        return `${resultado} é impar`
     }
 }
 
-console.log(dividirDois(20,5))
+console.log(dividirDois(20,2))
